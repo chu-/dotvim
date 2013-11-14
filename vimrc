@@ -23,7 +23,7 @@ let g:Powerline_symbols='fancy'
 " original repos on github
 " ...
 Bundle 'scrooloose/nerdtree'
-Bundle 'SirVer/ultisnips'
+Bundle 'chu-/ultisnips'
 Bundle 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key = 'z'
 Bundle 'tpope/vim-fugitive'
