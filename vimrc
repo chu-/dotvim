@@ -50,4 +50,4 @@ filetype plugin indent on     " required!
 
 
 "for input ["i","love","you"] in autocomplete mode
-imap <C-e> <Esc>ea
+imap <C-e> <Esc>l%%a
