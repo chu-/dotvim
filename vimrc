@@ -47,3 +47,7 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+
+
+"for input ["i","love","you"] in autocomplete mode
+imap <C-e> <Esc>ea
