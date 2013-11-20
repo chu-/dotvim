@@ -5,7 +5,9 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 set ts=4
 set expandtab
 set autoindent
-
+" search with ignore case as default
+" 'set noic' to case sensitive
+set ic
 ""
 filetype off                   " required!
 
@@ -28,6 +30,7 @@ Bundle 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key = 'z'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
+" '\' is the default <leader> for EasyGrep 
 Bundle 'vim-scripts/EasyGrep'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'terryma/vim-multiple-cursors'
