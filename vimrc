@@ -37,6 +37,16 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'benmills/vimux'
 Bundle 'scrooloose/syntastic'
 Bundle 'ivanov/vim-ipython'
+" org-mode support for vim
+let maplocalleader=','
+Bundle 'jceb/vim-orgmode'
+Bundle 'chu-/utl.vim'
+Bundle 'mattn/calendar-vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-repeat'
+
+
 " source explorer package Taglist+Nerd_tree+srcexplor
 Bundle 'wesleyche/Trinity'
 Bundle 'scrooloose/nerdtree'
@@ -93,7 +103,7 @@ let g:SrcExpl_nextDefKey = "<F4>"
 nmap <F8> :TrinityToggleAll<CR>
 nmap <F9> :TrinityToggleSourceExplorer<CR>
 nmap <F10> :TrinityToggleTagList<CR>
-nmap <F10> :TrinityToggleNERDTree<CR>
+nmap <F11> :TrinityToggleNERDTree<CR>
 
 
 
