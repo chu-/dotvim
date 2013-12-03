@@ -104,6 +104,7 @@ nmap <F8> :TrinityToggleAll<CR>
 nmap <F9> :TrinityToggleSourceExplorer<CR>
 nmap <F10> :TrinityToggleTagList<CR>
 nmap <F11> :TrinityToggleNERDTree<CR>
+nmap <F12> :Tagbar<CR>
 
 
 
