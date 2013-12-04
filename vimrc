@@ -8,6 +8,9 @@ set autoindent
 " search with ignore case as default
 " 'set noic' to case sensitive
 set ic
+" show charactor TAB in vim 
+set list
+set listchars=tab:~~
 ""
 filetype off                   " required!
 
@@ -42,13 +45,17 @@ let maplocalleader=','
 Bundle 'jceb/vim-orgmode'
 Bundle 'chu-/utl.vim'
 Bundle 'mattn/calendar-vim'
-Bundle 'majutsushi/tagbar'
+let g:tagbar_left = 1
+let g:tagbar_width = 40
+let g:tagbar_singleclick = 1
+let g:tagbar_show_linenumbers = 1
+Bundle 'chu-/tagbar'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-repeat'
 
 
 " source explorer package Taglist+Nerd_tree+srcexplor
-Bundle 'wesleyche/Trinity'
+Bundle 'chu-/Trinity'
 Bundle 'scrooloose/nerdtree'
 Bundle 'chu-/taglist.vim'
 Bundle 'wesleyche/SrcExpl'
@@ -56,7 +63,15 @@ Bundle 'wesleyche/SrcExpl'
 "set tags+=~/julia/contrib/ctags
 " shortcut for trinity
 " // The switch of the Source Explorer 
-nmap <F8> :SrcExplToggle<CR> 
+"nmap <F8> :SrcExplToggle<CR> 
+    let g:NERDTreeWinSize = 23
+    " Set the window position
+    let g:NERDTreeWinPos = "right"
+    " Auto centre
+    let g:NERDTreeAutoCenter = 0
+    " Not Highlight the cursor line
+    let g:NERDTreeHighlightCursorline = 0
+
 
 " // Set the height of Source Explorer window 
 let g:SrcExpl_winHeight = 8 
@@ -76,7 +91,7 @@ let g:SrcExpl_gobackKey = "<SPACE>"
 " into
 " // below listaccording to the command ":buffers!"
 let g:SrcExpl_pluginList = [ 
-        \ "__Tag_List__", 
+        \ "__Tagbar__", 
         \ "_NERD_tree_" 
     \ ] 
 
@@ -86,7 +101,7 @@ let g:SrcExpl_pluginList = [
 let g:SrcExpl_searchLocalDef = 1 
 
 " // Do not let the Source Explorer update the tags file when opening 
-let g:SrcExpl_isUpdateTags = 0 
+let g:SrcExpl_isUpdateTags =  0
 
 " // Use 'Exuberant Ctags' with '--sort=foldcase -R .' or '-L cscope.files' to 
 " // create/update the tags file 
@@ -102,9 +117,8 @@ let g:SrcExpl_prevDefKey = "<F3>"
 let g:SrcExpl_nextDefKey = "<F4>"
 nmap <F8> :TrinityToggleAll<CR>
 nmap <F9> :TrinityToggleSourceExplorer<CR>
-nmap <F10> :TrinityToggleTagList<CR>
+nmap <F10> :TrinityToggleTagbar<CR>
 nmap <F11> :TrinityToggleNERDTree<CR>
-nmap <F12> :Tagbar<CR>
 
 
 
