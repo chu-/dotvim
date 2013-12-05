@@ -10,11 +10,11 @@ set autoindent
 set ic
 " show charactor TAB in vim 
 set list
-set listchars=tab:~~
+set listchars=tab:~\ 
 ""
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -52,7 +52,8 @@ let g:tagbar_show_linenumbers = 1
 Bundle 'chu-/tagbar'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-repeat'
-
+" Text graph drawing
+Bundle 'vim-scripts/DrawIt'
 
 " source explorer package Taglist+Nerd_tree+srcexplor
 Bundle 'chu-/Trinity'
@@ -138,3 +139,6 @@ filetype plugin indent on     " required!
 
 "for input ["i","love","you"] in autocomplete mode
 imap <C-e> <Esc>l%%a
+"
+nmap q :q<CR> 
+nmap Q :q!<CR> 
