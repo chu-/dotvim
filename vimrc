@@ -52,9 +52,16 @@ let g:tagbar_show_linenumbers = 1
 Bundle 'chu-/tagbar'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-repeat'
+"vim-esaytags auto update the tags
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
 " Text graph drawing
 Bundle 'vim-scripts/DrawIt'
-
+" % match"
+Bundle 'vim-scripts/matchit.zip'
+" visual undo graph tree
+nnoremap <F5> :GundoShow<CR>
+Bundle 'sjl/gundo.vim'
 " source explorer package Taglist+Nerd_tree+srcexplor
 Bundle 'chu-/Trinity'
 Bundle 'scrooloose/nerdtree'
@@ -97,10 +104,20 @@ imap <C-e> <Esc>l%%a
 "quick exit
 nmap q :q<CR> 
 nmap Q :q!<CR> 
-"jump to tag
-nmap <CR> g]
+"jump to tag bind to Enter instead of Ctrl-]
+"use Shift+Enter instead Enter to confirmation selection in vim's windows such as EasyGrep,...
+"nmap <CR> g]1<CR><CR>
+nnoremap <S-CR> <CR>
+nnoremap <CR> <C-]>
+"back from tag bind to Space instead of Ctrl-t
+nmap <Space> <C-t>
 "jump to different windows
 nmap <C-h> <C-W>h
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k 
 nmap <C-l> <C-W>l
+"copy to clipboard
+vmap <S-y> "+y
+"paste from clipboard
+nmap <S-p> "+p
+
