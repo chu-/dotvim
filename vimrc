@@ -54,7 +54,7 @@ Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-repeat'
 "vim-esaytags auto update the tags
 Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-easytags'
+Bundle 'chu-/vim-easytags'
 " Text graph drawing
 Bundle 'vim-scripts/DrawIt'
 " % match"
